@@ -1,0 +1,58 @@
+{
+  "tickets": [
+    {
+      "bookingId": 1,
+      "noOfTickets": "3",
+      "movieName": "Movie 123",
+      "bookedByUser": "Rajesh Mehta"
+    },
+    {
+      "bookingId": 2,
+      "noOfTickets": "5",
+      "movieName": "Movie 115",
+      "bookedByUser": "Param Sinha"
+    },
+    {
+      "bookingId": 3,
+      "noOfTickets": "1",
+      "movieName": "Movie 125",
+      "bookedByUser": "Sita Ramesh"
+    },
+    {
+      "bookingId": 4,
+      "noOfTickets": "3",
+      "movieName": "Movie 240",
+      "bookedByUser": "Rushikesh Kadam"
+    },
+    {
+      "bookingId": 5,
+      "noOfTickets": "4",
+      "movieName": "Movie 200",
+      "bookedByUser": "Omkar Pawar"
+    },
+    {
+      "bookingId": 6,
+      "noOfTickets": "2",
+      "movieName": "Movie 119",
+      "bookedByUser": "Vismay Patil"
+    }
+  ],
+  "ticketSummary": {
+    "showBooking": {
+      "totalBooking": "2650",
+      "totalActiveBooking": "2304"
+    },
+    "eventsBooking": {
+      "totalEventBookings": "438",
+      "totalActiveEventBookings": "349"
+    },
+    "showsEnded": {
+      "totalShowsEnded": "2283",
+      "totalActiveShowsEnded": "1876"
+    },
+    "upcomingShows": {
+      "totalUpcomingShows": "3475",
+      "totalActiveUpcomingShows": "3475"
+    }
+  }
+}
