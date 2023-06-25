@@ -1,7 +1,8 @@
 import React from "react";
-import { CalendarIcon, MailIcon, BellIcon, ChartBarIcon, FolderIcon, HomeIcon, ClipboardCheckIcon, InboxIcon, MenuAlt2Icon, UsersIcon, XIcon } from "@heroicons/react/outline";
-import profileDp from "../assets/profile.png";
+import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, ClipboardCheckIcon, UsersIcon } from "@heroicons/react/outline";
+
 import "./navstyle.css";
+import Profile from "./Profile";
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
   { name: "Team", href: "#", icon: UsersIcon, current: false },
@@ -23,13 +24,7 @@ export const Navbar = () => {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">Booking Window</div>
-            <img className="prodp" src={profileDp} alt="Workflow" />
-            <p className="text-center">Jonathan Patton</p>
-            <p className="text-center">User</p>
-            <div className="profiledetails">
-              <MailIcon className="mr-3 flex-shrink-0 h-6 w-6 text-black-300" aria-hidden="true" />
-              <BellIcon className="mr-3 flex-shrink-0 h-6 w-6 text-black-300" aria-hidden="true" />
-            </div>
+            <Profile />
             <div className="mt-5 flex-1 flex flex-col">
               <nav className="flex-1 px-2 space-y-1">
                 {navigation.map((item) => (

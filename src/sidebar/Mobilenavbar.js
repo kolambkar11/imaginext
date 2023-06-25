@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment, useState } from "react";
 import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, ClipboardCheckIcon, UsersIcon, XIcon } from "@heroicons/react/outline";
 import { Dialog, Transition } from "@headlessui/react";
+import Profile from "./Profile";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -33,6 +34,7 @@ export const Mobilenavbar = ({ setSidebarOpen, sidebarOpen }) => {
                 </div>
               </Transition.Child>
               <div className="flex-shrink-0 flex items-center px-4">Booking Window</div>
+              <Profile />
               <div className="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav className="px-2 space-y-1">
                   {navigation.map((item) => (
